@@ -30,19 +30,12 @@
                 <option value="faded">Faded</option>
             </select>
 
-            <button onclick="generatePoster()">Download Poster</button>
+            <button onclick="downloadPoster()">Download Poster</button>
         </div>
         <div class="preview-section">
             <h2>Preview</h2>
             <div id="posterPreview">
-                <!-- Background image as the template -->
-                <div id="templateBackground"></div>
-                <img id="uploadedImage" alt="Uploaded Image">
-                <div id="textOverlay">
-                    <h1 id="previewName"></h1>
-                    <p id="previewCharges"></p>
-                    <p id="previewReward"></p>
-                </div>
+                <canvas id="posterCanvas" width="500" height="600"></canvas>
             </div>
         </div>
     </div>
