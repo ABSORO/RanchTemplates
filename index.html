@@ -6,40 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanted Poster Generator</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @font-face {
-            font-family: 'Serial Publication';
-            src: url('assets/SerialPublicationdemo-qxo1.ttf') format('truetype');
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <div class="input-section">
             <h1>Create Your Wanted Poster</h1>
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter name...">
+            <input type="text" id="name" placeholder="Enter name here...">
 
             <label for="charges">Charges:</label>
-            <textarea id="charges" placeholder="Enter charges, one per line..."></textarea>
+            <textarea id="charges" placeholder="List charges..."></textarea>
 
             <label for="reward">Reward:</label>
-            <input type="text" id="reward" placeholder="Enter reward amount...">
+            <input type="text" id="reward" placeholder="Enter reward...">
 
-            <label for="uploadImage">Upload Image (300x300):</label>
+            <label for="uploadImage">Upload 300x300 Image:</label>
             <input type="file" id="uploadImage" accept="image/*">
 
             <label>Filter:</label>
             <select id="filter">
                 <option value="none">None</option>
                 <option value="sepia">Sepia</option>
+                <option value="faded">Faded</option>
             </select>
 
-            <label for="opacity">Text Opacity:</label>
-            <input type="range" id="opacity" min="0.3" max="1" step="0.1" value="1" class="opacity-slider">
-
             <button onclick="downloadPoster()">Download Poster</button>
-            <button onclick="resetPoster()">Reset</button>
         </div>
         <div class="preview-section">
             <h2>Preview</h2>
