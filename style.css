@@ -1,0 +1,81 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Serial Publication', sans-serif;
+    background-color: #36393f;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    display: flex;
+    max-width: 1200px;
+    padding: 20px;
+}
+.input-section {
+    width: 40%;
+    padding-right: 20px;
+}
+.preview-section {
+    width: 60%;
+}
+#posterPreview {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: url('wantedtemplate.png');
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+#templateBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('wantedtemplate.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+#uploadedImage {
+    position: absolute;
+    top: 90px; /* Adjusted for template alignment */
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 2;
+}
+#textOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+    padding: 10px;
+}
+#previewName {
+    margin-top: 20px; /* Adjusted for alignment */
+    font-size: 24px;
+}
+#previewCharges {
+    font-size: 18px;
+    margin-top: 200px; /* Adjusted for alignment under "WANTED FOR" */
+}
+#previewReward {
+    font-size: 16px;
+    margin-top: 10px;
+}
